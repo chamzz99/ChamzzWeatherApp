@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="login">
+      <h2>Weather App Login</h2>
+      <input type="text" id="username" placeholder="username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="weatherApp">
+      <h2>WEATHER APP</h2>
+      <input type="text" id="latitude" placeholder="latitude" />
+      <input type="text" id="longitude" placeholder="longitude" />
+
+      <button onclick="getLiveWeather()">Search</button>
+
+      <img id="weather-icon" alt="Weather Icon" />
+
+      <div id="main-div"></div>
+
+      <div id="liveWeather-info"></div>
+
+      <div id="daily-forecast"></div>
+      <div id="forcast">
+        <button onclick="showForecast()">Show Forcast</button>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
